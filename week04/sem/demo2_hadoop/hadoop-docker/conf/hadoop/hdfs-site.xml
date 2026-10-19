@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration>
+  <property><name>dfs.namenode.name.dir</name><value>file:///data/hdfs/namenode</value></property>
+  <property><name>dfs.datanode.data.dir</name><value>file:///hadoop/dfs/data</value></property>
+  <!-- дефолты Data Proc: 1 реплика, блок 256 МБ (семинар явно задаёт -D dfs.replication / -D dfs.blocksize) -->
+  <property><name>dfs.replication</name><value>1</value></property>
+  <property><name>dfs.blocksize</name><value>268435456</value></property>
+  <property><name>dfs.permissions.enabled</name><value>false</value></property>
+  <property><name>dfs.webhdfs.enabled</name><value>true</value></property>
+  <property><name>dfs.namenode.rpc-bind-host</name><value>0.0.0.0</value></property>
+  <property><name>dfs.namenode.http-bind-host</name><value>0.0.0.0</value></property>
+  <property><name>dfs.namenode.servicerpc-bind-host</name><value>0.0.0.0</value></property>
+  <property><name>dfs.namenode.datanode.registration.ip-hostname-check</name><value>false</value></property>
+</configuration>

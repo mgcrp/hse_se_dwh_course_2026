@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<configuration>
+  <property><name>fs.defaultFS</name><value>hdfs://namenode:8020</value></property>
+  <!-- пользователь для просмотра HDFS из веб-интерфейса -->
+  <property><name>hadoop.http.staticuser.user</name><value>hadoop</value></property>
+  <!-- на случай включения impersonation в Livy -->
+  <property><name>hadoop.proxyuser.hadoop.hosts</name><value>*</value></property>
+  <property><name>hadoop.proxyuser.hadoop.groups</name><value>*</value></property>
+</configuration>

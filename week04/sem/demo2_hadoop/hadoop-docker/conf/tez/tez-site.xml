@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- полный tarball Tez кладётся в HDFS скриптом hdfs-init -->
+  <property><name>tez.lib.uris</name><value>${fs.defaultFS}/apps/tez/tez.tar.gz</value></property>
+  <property><name>tez.use.cluster.hadoop-libs</name><value>false</value></property>
+  <property><name>tez.am.resource.memory.mb</name><value>1024</value></property>
+  <property><name>tez.task.resource.memory.mb</name><value>1024</value></property>
+  <property><name>tez.am.container.reuse.enabled</name><value>true</value></property>
+  <property><name>tez.history.logging.service.class</name><value>org.apache.tez.dag.history.logging.impl.SimpleHistoryLoggingService</value></property>
+</configuration>

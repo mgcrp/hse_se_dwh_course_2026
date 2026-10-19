@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<configuration>
+  <property><name>mapreduce.framework.name</name><value>yarn</value></property>
+  <property><name>mapreduce.jobhistory.address</name><value>historyserver:10020</value></property>
+  <property><name>mapreduce.jobhistory.webapp.address</name><value>historyserver:19888</value></property>
+  <property><name>mapreduce.jobhistory.bind-host</name><value>0.0.0.0</value></property>
+
+  <property><name>yarn.app.mapreduce.am.env</name><value>HADOOP_MAPRED_HOME=/opt/hadoop</value></property>
+  <property><name>mapreduce.map.env</name><value>HADOOP_MAPRED_HOME=/opt/hadoop</value></property>
+  <property><name>mapreduce.reduce.env</name><value>HADOOP_MAPRED_HOME=/opt/hadoop</value></property>
+
+  <property><name>yarn.app.mapreduce.am.resource.mb</name><value>1024</value></property>
+  <!-- дефолты Data Proc, о которые спотыкается семинар (см. раздел 1 демо) -->
+  <property><name>mapreduce.job.maps</name><value>30</value></property>
+  <property><name>mapreduce.map.output.compress</name><value>true</value></property>
+
+  <property><name>mapreduce.map.memory.mb</name><value>1024</value></property>
+  <property><name>mapreduce.reduce.memory.mb</name><value>1024</value></property>
+</configuration>
